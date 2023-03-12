@@ -131,10 +131,6 @@
                             <option <?php if($d['status']=="Dikembalikan") echo "selected"; ?>value="Dikembalikan">Dikembalikan</option>
                         </select>
                     </div>
-                    <div class="form-group">
-                        <label>Gambar</label>
-                        <input type="file" class="form-control" name="gambar" accept="image/*"  >
-                    </div>
                 </div>
                     <div class="modal-footer">
                         <button class="btn btn-secondary" type="button" data-dismiss="modal"><i class="fa fa-undo"></i>Batal</button>
