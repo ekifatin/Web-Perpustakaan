@@ -7871,6 +7871,19 @@ textarea.form-control-lg {
   background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity)) !important;
 }
 
+.bg-purplecstm {
+  --bs-bg-opacity: 1;
+  background-color: rgba(191, 172, 226, var(--bs-bg-opacity)) !important;
+}
+
+.db-lineardb {
+  --bs-bg-opacity: 1;
+  background: linear-gradient(180deg, rgb(191, 172, 226) 0%, rgb(160, 132, 220) 100%) !important;
+  background-color: rgba(var(--bs-body-bg-rgb), var(--bs-bg-opacity)) !important;
+  height: 93vh;
+}
+
+
 .bg-body {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-body-bg-rgb), var(--bs-bg-opacity)) !important;

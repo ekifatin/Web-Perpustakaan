@@ -2,10 +2,10 @@
 @section('content')
 
 
-<div class="card mb-4">
+<div class="card mb-4 db-lineardb">
     <div class="card-header">
         <h4><i class="fa-solid fa-book"></i> Buku</h4>
-        <button class="btn btn-primary btn-round ml-auto" data-toggle="modal" data-target="#modalAddBuku">
+        <button class="btn btn-success btn-round ml-auto" data-toggle="modal" data-target="#modalAddBuku">
             <i class="fa fa-plus"></i>
             Tambah Buku
         </button>

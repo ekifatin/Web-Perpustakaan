@@ -2,7 +2,7 @@
 @section('content')
 
 
-<div class="card mb-4">
+<div class="card mb-4 db-lineardb">
     <div class="card-header">
         <h4><i class="fa-solid fa-book"></i> Buku</h4>
         </div>

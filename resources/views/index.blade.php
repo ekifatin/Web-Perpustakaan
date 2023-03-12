@@ -15,62 +15,62 @@
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
     </head>
     <body class="sb-nav-fixed">
-        <nav class="sb-topnav navbar navbar-expand navbar-black bg-black">
+        <nav class="sb-topnav navbar navbar-expand navbar-black bg-purplecstm">
             <!-- Navbar Brand-->
             
             <a class="navbar-brand ps-4" href="/"> <img src="{{asset('admin/assets/img/logo5.png')}}" width="150px" > </a>
             <!-- Sidebar Toggle-->
-            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0 text-secondary" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
             <!-- Navbar Search-->
             <div class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0"></div>
             <!-- Navbar-->
             <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
-                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="{{ route('logout') }}">Logout</a></li>
-                    </ul>
-                </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-secondary" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item text-secondary" href="{{ route('logout') }}">Logout</a></li>
+                </ul>
+            </li>
             </ul>
         </nav>
         <div id="layoutSidenav">
             <div id="layoutSidenav_nav">
-                <nav class="sb-sidenav accordion sb-sidenav-dark bg-black" id="sidenavAccordion">
+                <nav class="sb-sidenav accordion sb-sidenav-dark bg-purplecstm" id="sidenavAccordion">
                     <div class="sb-sidenav-menu">
                         <div class="nav">
                         @if (Auth::user()->level == "admin")
-                            <div class="sb-sidenav-menu-heading">Dashboard
+                            <div class="sb-sidenav-menu-heading text-secondary">Dashboard
                             </div>
-                            <a class="nav-link" href="/">
-                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i>
+                            <a class="nav-link text-secondary" href="/">
+                                <div class="sb-nav-link-icon text-secondary"><i class="fas fa-tachometer-alt"></i>
                                 </div>
                                 Dashboard
                             </a>
                             @endif
                             @if (Auth::user()->level == "admin")
-                            <div class="sb-sidenav-menu-heading">Master</div>
-                            <a class="nav-link" href="/buku">
-                                <div class="sb-nav-link-icon"><i class="fa-solid fa-book"></i></div>
+                            <div class="sb-sidenav-menu-heading text-secondary">Master</div>
+                            <a class="nav-link text-secondary" href="/buku">
+                                <div class="sb-nav-link-icon text-secondary"><i class="fa-solid fa-book"></i></div>
                                 Buku 
                             </a>
                             @endif
                             @if (Auth::user()->level == "admin")
-                            <a class="nav-link" href="/pinjam">
-                                <div class="sb-nav-link-icon"><i class="fa-solid fa-book"></i></div>
+                            <a class="nav-link text-secondary" href="/pinjam">
+                                <div class="sb-nav-link-icon text-secondary"><i class="fa-solid fa-book "></i></div>
                                 Peminjaman
                             </a>
                             @endif
                             @if (Auth::user()->level == "admin")
-                                <a class="nav-link" href="/user">
-                                    <div class="sb-nav-link-icon"><i class="fa-solid fa-user"></i></i></div>
+                                <a class="nav-link text-secondary" href="/user">
+                                    <div class="sb-nav-link-icon text-secondary"><i class="fa-solid fa-user"></i></i></div>
                                     User 
                                 </a>
                             @endif
                             @if (Auth::user()->level == "user")
-                            <div class="sb-sidenav-menu-heading">Peminjaman
+                            <div class="sb-sidenav-menu-heading text-secondary">Peminjaman
                             </div>
-                            <a class="nav-link" href="/pinjam_user">
-                                <div class="sb-nav-link-icon"><i class="fa-solid fa-book"></i></div>
+                            <a class="nav-link text-secondary" href="/pinjam_user">
+                                <div class="sb-nav-link-icon text-secondary"><i class="fa-solid fa-book"></i></div>
                                 Peminjaman Buku
                             </a>
                             @endif
@@ -104,7 +104,7 @@
                             </div>
                             
                     </div>
-                        <div class="sb-sidenav-footer bg-black">
+                        <div class="sb-sidenav-footer bg-purplecstm text-secondary">
                             <div class="small">Selamat Datang</div>
                             {{ Auth::user()->name }}
                         </div>

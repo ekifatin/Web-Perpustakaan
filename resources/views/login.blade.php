@@ -12,7 +12,7 @@
     <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
     <style>
         body {
-            background-image: linear-gradient(#13265c, black);
+            background-image: linear-gradient(#3E54AC, #655DBB);
         }
         
         body form button {
@@ -60,9 +60,9 @@
                                     <div class="mt-4 mb-4">
                                         <button type="submit" class="rounded-0">Masuk</button>
                                     </div>
-                                    <div class="w-100 text-center mt-4 text">
-	          	                        <p class="mb-0">Belum Punya Akun?</p>
-		                                <a href="/register">Daftar</a>
+                                    <div class="w-100 text-left mt-4 text">
+	          	                        <p class="mb-0">Belum Punya Akun?
+		                                <a href="/register">Daftar</a></p>
 	                                </div>
                                 </form>
                             </div>

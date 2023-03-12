@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Login - SB Admin</title>
+    <title>Register - SB Admin</title>
     <link href="{{asset('admin/css/login/styles.css')}}" rel="stylesheet" />
     <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
     <style>
         body {
-            background-image: linear-gradient(#13265c, black);
+            background-image: linear-gradient(#3E54AC, #655DBB);
         }
         
         body form button {
@@ -46,7 +46,7 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-4">
                             <div class="bg-white shadow-lg border-0 rounded-0 mt-5 p-4">
-                                <img src="{{asset('admin/assets/img/logo.png')}}" width="150px" alt="">
+                            <img src="{{asset('admin/assets/img/logo3.png')}}" width="150px" alt="" style="display:block; margin:auto;">
                                 <form action= "{{ route('postregister') }}" method= "post">
                                     @csrf
                                     
@@ -75,6 +75,10 @@
                                     <div class="mt-4 mb-4">
                                         <button type="submit" class="rounded-0">Register</button>
                                     </div>
+                                    <div class="w-100 text-left mt-4 text">
+	          	                        <p class="mb-0">Sudah Memiliki Akun?
+		                                <a href="/login">Login</a></p>
+	                                </div>
                                 </form>
                             </div>
                         </div>
